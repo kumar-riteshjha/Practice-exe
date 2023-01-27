@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=`" />
+    <title>rowspan and colspan</title>
+    <style>
+      table,
+      tr,
+      td,
+      th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      #rj {
+        width: 80%;
+        height: 250px;
+        text-align: center;
+      }
+      tr,
+      td,
+      th {
+        height: 25px;
+      }
+      #rk {
+        height: 150px;
+        width: 60%;
+      }
+    </style>
+  </head>
+  <body>
+    <caption>
+      <mark>Final result for 10<sup>th</sup> Class</mark>
+    </caption>
+    <table>
+      <tr>
+        <th style="background-color: darkviolet">Subject</th>
+        <th style="background-color: darkviolet">Marks</th>
+      </tr>
+      <tr>
+        <td>Maths</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <td>hindi</td>
+        <td>80</td>
+      </tr>
+      <tr>
+        <td>Eng</td>
+        <td>75</td>
+      </tr>
+      <tr>
+        <td>SST</td>
+        <td>80</td>
+      </tr>
+      <tr>
+        <td>N.T lang</td>
+        <td>75</td>
+      </tr>
+      <tr>
+        <td>Total mark</td>
+        <td>400</td>
+      </tr>
+    </table>
+    <br /><br />
+    <!-- Ye to hum simple teble bna rahe ha !!! -->
+    <table id="rj">
+      <caption>
+        There are random chat ready"using by rowsapn and colspan"
+      </caption>
+
+      <tr>
+        <th>ABC</th>
+        <th>DEF</th>
+        <th>GHI</th>
+        <th>RST</th>
+      </tr>
+
+      <tr>
+        <td rowspan="4" style="background-color: aqua">123</td>
+        <td colspan="3" style="background-color: blue">456</td>
+        <!-- <td>789</td> -->
+        <!-- <td>000</td> -->
+      </tr>
+      <tr>
+        <!-- <td>123</td> -->
+        <td>456</td>
+        <td>789</td>
+        <td>000</td>
+      </tr>
+      <tr>
+        <!-- <td>123</td> -->
+        <td>456</td>
+        <!-- <td>789</td> -->
+        <td rowspan="2" colspan="2" style="background-color: chartreuse">
+          000
+        </td>
+      </tr>
+      <tr>
+        <!-- <td>123</td> -->
+        <td>456</td>
+        <!-- <td>789</td> -->
+        <!-- <td>000</td> -->
+      </tr>
+    </table>
+    <br /><br />
+    <table>
+      <tr>
+        <th colspan="6" style="background-color: rgb(221, 84, 84)">
+          Time table(Using by rowspan and colspan  )
+        </th>
+      </tr>
+      <tr>
+        <th rowspan="6" style="background-color: rgb(188, 116, 64)">Hours</th>
+        <th style="background-color: goldenrod">Mon</th>
+        <th style="background-color: goldenrod">Tue</th>
+        <th style="background-color: goldenrod">wed</th>
+        <th style="background-color: goldenrod">thu</th>
+        <th style="background-color: goldenrod">fri</th>
+      </tr>
+      <tr>
+        <td>science</td>
+        <td>Maths</td>
+        <td>science</td>
+        <td>Maths</td>
+        <td>Arts</td>
+      </tr>
+
+      <tr>
+        
+        <td>science</td>
+        <td>Maths</td>
+        <td>science</td>
+        <td>Maths</td>
+        <td>Arts</td>
+      </tr>
+
+      <tr>
+        <td colspan="5" style="background-color: rgb(75, 199, 75)">Lunch</td>
+        <!-- <td>science</td>
+        <td>Maths</td>
+        <td>science</td>
+        <td>Maths</td>
+        <td>Arts</td> -->
+      </tr>
+      <tr>
+        <!-- <td>Lunch</td> -->
+        <td>SST</td>
+        <td>Maths</td>
+        <td>science</td>
+        <td>Maths</td>
+        <td rowspan="2" style="background-color: springgreen">projects</td>
+      </tr>
+      <tr>
+        <!-- <td>Hours</td> -->
+        <td>science</td>
+        <td>Maths</td>
+        <td>science</td>
+        <td>hindi</td>
+        <!-- <td >projects</td> -->
+      </tr>
+    </table>
+    <br /><br />
+
+    <table id="rk">
+      <colgroup>
+        <col span="1" style="background-color: fuchsia" />
+        <col span="1" style="background-color: rgb(0, 255, 76)" />
+        <col span="1" style="background-color: rgb(21, 0, 255)" />
+      </colgroup>
+      <caption>
+        One more table(this is using by "colgroup" tag )
+      </caption>
+      <tr>
+        <td>abc</td>
+        <td>def</td>
+        <td>GHI</td>
+      </tr>
+      <tr>
+        <td>abc</td>
+        <td>def</td>
+        <td>GHI</td>
+      </tr>
+      <tr>
+        <td>abc</td>
+        <td>def</td>
+        <td>GHI</td>
+      </tr>
+    </table>
+  </body>
+</html>
