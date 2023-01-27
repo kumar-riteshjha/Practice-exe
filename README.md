@@ -1,0 +1,3 @@
+# Practice-exe
+this is basic repo in that we are submitting some of our work here.
+finaly........
